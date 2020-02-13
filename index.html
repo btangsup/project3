@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Because The Internet Quiz</title>
     <link href="https://fonts.googleapis.com/css?family=Monda|Passion+One&display=swap" rel="stylesheet">
-    
+    <link rel="icon" href="./assets/favicon.ico" type="image/gif">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -15,185 +15,238 @@
         </div>
         <div class="mainTitle">
             <h1>How Childish Are You?</h1>
-            <div class="startQuizContainer">
-                <a class="startQuizBtn" href="#question1">Start Quiz</a>
-            </div>
+            <button class="startQuizBtn" id="submit0">Start Quiz</button> 
         </div>
     </header>
     <main id="main">
-        <section id="question1" class="question1">
-            <div class="formContainer wrapper">
-                <div class="left">
-                    <div class="questionContainer">
-                        <h2 class="questionTitle">Question 1</h2>
-                        <h3>Which lion king character best represents you?</h3>
-                    </div>
-                    <div class="questionImgContainer">
-                        <img src="assets/questionImgs/questionImg1.jpg" class="questionImg" alt="Lion King Characters">
-                    </div>
+        <section class="quiz1">
+            <div class="quiz">
+                <div class="questionContainer">
+                    <h2>Question 1</h2>
+                    <h3>Which Lion King character best represents you?</h3>
                 </div>
-                <div class="right">
-                    <form action="GET" id="quizForm" class="quizForm">
-                        <div class="inputContainer">
-                            <div class="questionBox">
-                                <input type="radio" name="question1" value="redbone" id="Nala">
+                <div>
+                    <div class="left">
+                        <div class="questionImgContainer">
+                            <img src="assets/questionImgs/questionImg1.jpg" alt="Lion King Characters" class="questionImg">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <form action="POST" id="question1">
+                            <div class="flexOption">
+                                <input type="radio" name="question1" value="redbone"></input>
                                 <label for="Nala">Nala</label>
                             </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question1" value="sober" id="Simba">
+                            <div class="flexOption">
+                                <input type="radio" name="question1" value="sober"></input>
                                 <label for="Simba">Simba</label>
                             </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question1" value="thisIsAmerica" id="Mufasa">
+                            <div class="flexOption">
+                                <input type="radio" name="question1" value="thisIsAmerica"></input>
                                 <label for="Mufasa">Mufasa</label>
                             </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question1" value="bonfire" id="Scar">
+                            <div class="flexOption">
+                                <input type="radio" name="question1" value="bonfire"></input>
                                 <label for="Scar">Scar</label>
                             </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question1" value="3005" id="Rafiki">
+                            <div class="flexOption">
+                                <input type="radio" name="question1" value="three005"></input>
                                 <label for="Rafiki">Rafiki</label>
                             </div>
-                            <div class="submit">
-                                <input type="submit" value="submit">
-                            </div>
+                            <input type="submit" class="submitButton" id="submit1" value="Submit">
+                        </form>
+                    </div>
+            </div>
+        </section>
+        <section class="quiz2">
+            <div class="quiz">
+                <div class="left">
+                    <div class="questionContainer">
+                        <h2></h2>
+                        <h3></h3>
+                    </div>
+                    <div class="questionImgContainer">
+                        <img src="assets/questionImgs/questionImg2.png" class="questionImg" alt="Childish Gambino Eating Pencils">
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="" id="question2">
+                        <div class="flexOption">
+                            <input type="radio" name="question2" value="redbone"></input>
+                            <label for="Peanut-Butter">Peanut-Butter Chocolate cake with Kool-Aid</label>
                         </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question2" value="sober"></input>
+                            <label for="Fries">Fries</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question2" value="thisIsAmerica"></input>
+                            <label for="Hamburgers">Hamburgers</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question2" value="bonfire"></input>
+                            <label for="Smores">Smores</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question2" value="three005"></input>
+                            <label for="Pokebowl">Pokebowl</label>
+                        </div>
+                        <input type="submit" class="submitButton" id="submit2" value="Submit">
                     </form>
                 </div>
             </div>
         </section>
-        <section id="question2" class="question2">
-            <div class="formContainer wrapper">
+        <section class="quiz3">
+            <div class="quiz">
                 <div class="left">
                     <div class="questionContainer">
-                        <h2 class="questionTitle">Question 2</h2>
-                        <h3>Favourite Food?</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                     <div class="questionImgContainer">
-                        <img src="assets/questionImgs/questionImg1.jpg" class="questionImg" alt="Lion King Characters">
+                        <img src="assets/questionImgs/questionImg3.png" class="questionImg3" alt="Childish gambino looking real surprised">
                     </div>
                 </div>
                 <div class="right">
-                    <form action="GET" id="quizForm" class="quizForm">
-                        <div class="inputContainer">
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="redbone" id="peanutButterChocolateCakeWithKoolAid">
-                                <label for="peanutButterChocolateCakeWithKoolAid">Peanut Butter Chocolate Cake with Kool-Aid</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="sober" id="fries">
-                                <label for="fries">Fries</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="thisIsAmerica" id="hamburgers">
-                                <label for="hamburgers">Hamburgers</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="bonfire" id="smores">
-                                <label for="smores">Smores</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="3005" id="pokebowl">
-                                <label for="pokebowl">Pokebowl</label>
-                            </div>
-                            <div class="submit">
-                                <input type="submit" value="submit">
-                            </div>
+                    <form action="" id="question3">
+                        <div class="flexOption">
+                            <input type="radio" name="question3" value="three005"></input>
+                            <label for="Alien">Alien 👽</label>
                         </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question3" value="bonfire"></input>
+                            <label for="Fire">Fire 🔥</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question3" value="thisIsAmerica"></input>
+                            <label for="Canadian Flag">Canadian Flag</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question3" value="redbone"></input>
+                            <label for="Flex">Flex 💪</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question3" value="sober"></input>
+                            <label for="Mind Blown">Mind Blown 🤯</label>
+                        </div>
+                        <input type="submit" class="submitButton submit3" value="Submit">
                     </form>
                 </div>
             </div>
         </section>
-        <section id="question3" class="question3">
-            <div class="formContainer wrapper">
+        <section class="quiz4">
+            <div class="quiz">
                 <div class="left">
                     <div class="questionContainer">
-                        <h2 class="questionTitle">Question 3</h2>
-                        <h3>Which emoji represents you?</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                     <div class="questionImgContainer">
-                        <img src="assets/questionImgs/questionImg1.jpg" class="questionImg" alt="Lion King Characters">
+                        <img src="assets/questionImgs/questionImg4.jpg" alt="Childish Gambino sitting with a teddy-bear on a ferris wheel" class="questionImg">
                     </div>
                 </div>
                 <div class="right">
-                    <form action="GET" id="quizForm" class="quizForm">
-                        <div class="inputContainer">
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="3005" id="alien">
-                                <label for="alien">Alien 👽</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="bonfire" id="fire">
-                                <label for="fire">Fire🔥</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="thisIsAmerica" id="canadianFlag">
-                                <label for="canadianFlag">Canadian Flag</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="sober" id="sober">
-                                <label for="sober">Sober</label>
-                            </div>
-                            <div class="questionBox">
-                                <input type="radio" name="question" value="redbone" id="flex">
-                                <label for="flex">Flex</label>
-                            </div>  
-                            <div class="submit">
-                                <input type="submit" value="submit">
-                            </div>
+                    <form action="" id="question4">
+                        <div class="flexOption">
+                            <input type="radio" name="question4" value="redbone"></input>
+                            <label for="Home in my cozy room">Home in my cozy room</label>
                         </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question4" value="three005"></input>
+                            <label for="At a party">At a party</label>
+                        <div class="flexOption">
+                            <input type="radio" name="question4" value="sober"></input>
+                            <label for="With your friends">With your friends</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question4" value="bonfire"></input>
+                            <label for="Outdoors">Outdoors</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question4" value="thisIsAmerica"></input>
+                            <label for="Travelling around the world">Travelling around the world</label>
+                        </div>
+                        <input type="submit" class="submitButton submit4" value="Submit">
                     </form>
                 </div>
             </div>
-            
+        </section>
+        <section class="quiz5">
+            <div class="quiz">
+                <div class="left">
+                    <div class="questionContainer">
+                        <h2></h2>
+                        <h3></h3>
+                    </div>
+                    <div class="questionImgContainer">
+                        <img src="assets/questionImgs/questionImg5.png" class="questionImg" alt="">
+                    </div>
+                </div>
+                <div class="right">
+                    <form action="" id="question5">
+                        <div class="flexOption">
+                            <input type="radio" name="question5" value="bonfire"></input>
+                            <label for="I'll rap while wrapping tortilla wraps">I'll rap while wrapping tortilla wraps</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question5" value="redbone"></input>
+                            <label for="I infintely sound better when I sing in the shower">I infintely sound better when I sing in the shower</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question5" value="thisIsAmerica"></input>
+                            <label for="Sitting by the fireplace leaning back while listening to my jams">Sitting by the fireplace leaning back while listening to my jams</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question5" value="sober"></input>
+                            <label for="I wanna dance, I wanna groove">I wanna dance, I wanna groove</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question5" value="three005"></input>
+                            <label for="Need to turn up!">Need to turn up!</label>
+                        </div>
+                        <input type="submit" class="submitButton submit5" value="Submit">
+                    </form>
+                </div>
+            </div>
         </section>
 
-        
-        <!-- <section id="question4" class="question4">
-            <div class="formContainer">
-                <form action=""></form>
-            </div>
-        </section>
-        <section id="question5" class="question5">
-            <div class="formContainer">
-                <form action=""></form>
-            </div>
-        </section> -->
-    
-        
         <section class="result" id="result">
             <div class="resultContainer">
                 <h1 class="songTitleResult"></h1>
-                <p class="songVerse"></p>
             </div>
-            <div class="albumCarousel">
-                <div class="albumContainer">
-                    <a href="" class="albumLink">
+            <div>
+                <h2 class="checkAlbum">Check out his albums here!</h2>
+            </div>
+            <div class="main-carousel wrapper">
+                <div class="carousel-cell">
+                    <a href="https://open.spotify.com/album/4Carzsnpd6yvuHZ49I0oz8" class="albumLink">
                         <img src="assets/albumCovers/album1.png" alt="Awaken, My Love! Album Cover" class="albumImg">
                     </a>
                 </div>
-                <div class="albumContainer">
-                    <a href="" class="albumLink">
+                <div class="carousel-cell">
+                    <a href="https://open.spotify.com/album/5dVKggb6Nvfp7JJdLfHPof" class="albumLink">
                         <img src="assets/albumCovers/album2.jpg" alt="Kauai Album Cover" class="albumImg">
                     </a>
                 </div>
-                <div class="albumContainer">
-                    <a href="" class="albumLink">
+                <div class="carousel-cell">
+                    <a href="https://open.spotify.com/album/32KdoFFhgjCLdU0DWL71tx" class="albumLink">
                         <img src="assets/albumCovers/album3.jpg" alt="" class="albumImg">
                     </a>
                 </div>
-                <div class="albumContainer">
-                    <a href="" class="albumLink">
+                <div class="carousel-cell">
+                    <a href="https://open.spotify.com/album/4GNIhgEGXzWGAefgN5qjdU" class="albumLink">
                         <img src="assets/albumCovers/album4.jpg" alt="" class="albumImg">
                     </a>
                 </div>
-                <div class="albumContainer">
-                    <a href="" class="albumLink">
+                <div class="carousel-cell">
+                    <a href="https://open.spotify.com/album/6L4gtDcKB0RBRpx2DhHrsQ" class="albumLink">
                         <img src="assets/albumCovers/album5.jpg" alt="" class="albumImg">
                     </a>
                 </div>
             </div>
+            <!-- <div class="retakeQuiz">
+                <button>Restart Quiz</button>
+            </div> -->
         </section>
     </main>
     <footer>
