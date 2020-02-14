@@ -1,0 +1,72 @@
+/* HEADER STYLE */
+
+.hero {
+    background-image: url(../assets/header1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.spotifyContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #A40606;
+    padding: 10px;
+    transition: 0.8s ease;
+    z-index: 999;
+        &:hover {
+                background-color: #1DB954;
+            }
+        a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: .75rem; 
+        }
+}
+
+.mainTitle {
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center;  
+
+    h1 {
+        text-transform: uppercase;
+        transition: all 1s;
+        color: #fff;
+        animation: neon 1.5s ease-in-out infinite alternate;
+        &:hover {
+            color: #A40606;
+            -webkit-animation: none;
+            -moz-animation: none;
+            animation: none;
+        }
+    }
+}
+
+.descriptionTitle {
+    line-height: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.startQuizBtn {
+    padding: 10px 40px;
+    background-color: #A40606;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    &:hover {
+        color: #A40606;
+        background-color: white;
+    }
+}

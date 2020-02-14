@@ -1,7 +1,10 @@
 $('document').ready(function(){
 
+    // create an open array to store results from user input
     const results = []
     const allQuestions = [
+
+    // the options represents a value that'll represent the result that is displayed at the end
         {
             question: "Which lion king character best represents you?",
             options: [
@@ -11,6 +14,7 @@ $('document').ready(function(){
                 "Scar", //bonfire
                 "Rafiki" //3005
             ],
+            lyric: "hello"
         },
         {   
             questionNumb: "Question 2",
@@ -69,7 +73,6 @@ $('document').ready(function(){
     $(".submitButton").click(function () {
         const offsetTop = $(this).offset().top + 100;
         $('html, .quiz2').animate({
-
             scrollTop: offsetTop
         }, 'slow');
     });
@@ -82,12 +85,13 @@ $('document').ready(function(){
     let three005 = 0;
     let bonfire = 0;
 
-    //Question 1, prevent defaults and have show h2, h3 tags on click
+    //Question 1
 
     $('#question1').on('submit', function (event) {
+        //prevent form from linking to a new page
         event.preventDefault();
 
-        //capture user input
+        //capture user input when checked
 
         const question1 = $('input[name=question1]:checked').val();
 
@@ -109,7 +113,7 @@ $('document').ready(function(){
         $('.quiz2 h2').append(questionNumb);
         $('.quiz2 h3').append(question); 
 
-        // created an if/else statement to track which value was picked. increment of 1
+        // created an if/else statement to track which value was picked. increment of 1 will be added to which ever result selected
 
         if (question1 === 'sober') {
             sober++;
@@ -127,8 +131,6 @@ $('document').ready(function(){
     //Question 2
     
     $('#question2').on('submit', function (event) {
-
-        //prevent default action from loading a new page
         event.preventDefault();
 
         const question2 = $('input[name=question2]:checked').val();
@@ -257,26 +259,27 @@ $('document').ready(function(){
             bonfire++;
         }
 
-        // created an if/else statement to show for results, whichever total value gets selected the most will display. need to create a tie if else statement
+        // created an if/else statement to show for results, whichever total value gets selected the most will display the song. need to create a tie if else statement
+
+        let $result = $(`<h3>`).text('Your Childish Gambino Song is ...');
+
 
         if (sober > thisIsAmerica && sober > redbone && sober > three005 && sober > bonfire) {
             sober = 'Sober';
-            $('.songTitleResult').append(`Your Childish Gambino Song is ${sober}`);
+            $('.songTitleResult').append($result, `${sober}`);
         } else if (thisIsAmerica > sober && thisIsAmerica > redbone && thisIsAmerica > three005 && thisIsAmerica > bonfire) {
             thisIsAmerica = 'This Is America';
-            $('.songTitleResult').append(`Your Childish Gambino Song is ${thisIsAmerica}`);
+            $('.songTitleResult').append($result, `${thisIsAmerica}`);
         } else if (redbone > thisIsAmerica && redbone > sober && redbone > bonfire && redbone > three005) {
             redbone = 'Redbone';
-            $('.songTitleResult').append(`Your Childish Gambino Song is ${redbone}`);
+            $('.songTitleResult').append($result, `${redbone}`);
         } else if (three005 > thisIsAmerica && three005 > sober && three005 > bonfire && three005 > redbone) {
             three005 = '3005';
-            $('.songTitleResult').append(`Your Childish Gambino Song is ${three005}`);
+            $('.songTitleResult').append($result, `${three005}`);
         } else {
             bonfire = 'Bonfire';
-            $('.songTitleResult').append(`Your Childish Gambino Song is ${bonfire}`);
+            $('.songTitleResult').append($result, `${bonfire}`);
         }
-
-        console.log(sober, thisIsAmerica, redbone, bonfire, three005);
     })
 
     // restart button to hard refresh the page and allow the user to take the quiz again

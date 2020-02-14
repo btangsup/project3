@@ -1,88 +1,7 @@
 @import "../partials/setup";
 @import "../partials/variables";
 @import "../partials/global";
-
-/* HEADER STYLE */
-
-.hero {
-    background-image: url(../assets/header1.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.spotifyContainer {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #A40606;
-    padding: 10px;
-    transition: 0.8s ease;
-    z-index: 999;
-        &:hover {
-                background-color: #1DB954;
-            }
-        a {
-            text-decoration: none;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: .75rem; 
-        }
-}
-
-.mainTitle {
-    color: #fff;
-    font-size: 3rem;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column; 
-    text-align: center;  
-
-    h1 {
-        text-transform: uppercase;
-        transition: all 1s;
-        color: #fff;
-        animation: neon 1.5s ease-in-out infinite alternate;
-        &:hover {
-            color: #A40606;
-            -webkit-animation: none;
-            -moz-animation: none;
-            animation: none;
-        }
-    }
-}
-
-.descriptionTitle {
-    line-height: 2rem;
-    font-size: 2rem;
-    text-transform: capitalize;
-}
-
-// @keyframes neon {
-//     from {
-//         text-shadow: 0 0 5px #fff, 0 0 0px #fff, 0 0 20px #fff, 0 0 30px #A40606, 0 0 60px #A40606, 0 0 70px #A40606, 0 0 80px #A40606;
-//     }
-//     to {
-//         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #A40606, 0 0 35px #A40606, 0 0 40px #A40606, 0 0 50px #A40606;
-//     }
-// }
-
-.startQuizBtn {
-    padding: 10px 40px;
-    background-color: #A40606;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 2.5rem;
-    &:hover {
-        color: #A40606;
-        background-color: white;
-    }
-}
+@import "../partials/header";
 
 /*  QUESTION STYLES */
 
@@ -90,7 +9,7 @@
     width: 60%;
     height: 92vh;
     margin: 0 auto;
-    border: 9px solid #A40606;
+    border: 9px solid $primary-color;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -162,8 +81,8 @@ form {
     font-size: 3rem;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
 }
-
 
 /* ALBUM STYLES */
 
@@ -197,7 +116,7 @@ form {
 /* FOOTER STYLE */
 footer {
     text-align: center;
-    background-color: #A40606;
+    background-color: $primary-color;
     color: #fff;
 
     p {
@@ -253,25 +172,45 @@ footer {
     .mainTitle h2 {
         font-size: 1.6rem;
     }
+
+    .main-carousel {
+        flex-flow: row wrap;
+        align-items: center;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .questionImg {
         width: 250px;
     }
 
-    .carousel-cell,
-    .checkAlbum {
-        display: none;
+    .carousel-cell {
+        height: 75px;
+        width: 75px;  
     }
 }
 
 @media (max-height: 750px) {
-    .questionImg,
-    .carousel-cell,
-    .checkAlbum,
+    .questionImg {
+        width: 200px;
+    }
+
     .questionImg3 {
-        display:none
+        width: 150px;
+    }
+}
+
+@media (max-height: 600px) {
+    .questionImg,
+    .questionImg3 {
+        display: none;
+    }
+}
+
+@media (max-height: 500px) {
+    .main-carousel,
+    .carousel-cell {
+        display: none;
     }
 }
 

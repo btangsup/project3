@@ -420,6 +420,7 @@ form {
   font-size: 3rem;
   color: #fff;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* ALBUM STYLES */
@@ -509,23 +510,46 @@ footer p {
   .mainTitle h2 {
     font-size: 1.6rem;
   }
+  .main-carousel {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .questionImg {
     width: 250px;
   }
-  .carousel-cell,
-  .checkAlbum {
-    display: none;
+  .carousel-cell {
+    height: 75px;
+    width: 75px;
   }
 }
 
 @media (max-height: 750px) {
-  .questionImg,
-  .carousel-cell,
-  .checkAlbum,
+  .questionImg {
+    width: 200px;
+  }
   .questionImg3 {
+    width: 150px;
+  }
+}
+
+@media (max-height: 600px) {
+  .questionImg,
+  .questionImg3 {
+    display: none;
+  }
+}
+
+@media (max-height: 500px) {
+  .main-carousel,
+  .carousel-cell {
     display: none;
   }
 }
