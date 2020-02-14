@@ -1,0 +1,14 @@
+// Variable Styles 
+
+$primary-color: #A40606;
+$secondary-color: #1f1f1f;
+
+/* MIX INS */
+
+/* FLEXBOX CENTERING */
+
+@mixin flexbox-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

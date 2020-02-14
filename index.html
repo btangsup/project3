@@ -15,10 +15,11 @@
         </div>
         <div class="mainTitle">
             <h1>How Childish Are You?</h1>
-            <button class="startQuizBtn" id="submit0">Start Quiz</button> 
+            <h2 class="descriptionTitle">A quiz to determine which Childish Gambino song best represents you! </h2>
+            <button class="startQuizBtn">Start Quiz</button>
         </div>
     </header>
-    <main id="main">
+    <main id="main" class="wallpaper">
         <section class="quiz1">
             <div class="quiz">
                 <div class="questionContainer">
@@ -32,30 +33,30 @@
                         </div>
                     </div>
                     <div class="right">
-                        <form action="POST" id="question1">
-                            <div class="flexOption">
-                                <input type="radio" name="question1" value="redbone"></input>
-                                <label for="Nala">Nala</label>
-                            </div>
-                            <div class="flexOption">
-                                <input type="radio" name="question1" value="sober"></input>
-                                <label for="Simba">Simba</label>
-                            </div>
-                            <div class="flexOption">
-                                <input type="radio" name="question1" value="thisIsAmerica"></input>
-                                <label for="Mufasa">Mufasa</label>
-                            </div>
-                            <div class="flexOption">
-                                <input type="radio" name="question1" value="bonfire"></input>
-                                <label for="Scar">Scar</label>
-                            </div>
-                            <div class="flexOption">
-                                <input type="radio" name="question1" value="three005"></input>
-                                <label for="Rafiki">Rafiki</label>
-                            </div>
-                            <input type="submit" class="submitButton" id="submit1" value="Submit">
-                        </form>
-                    </div>
+                    <form action="POST" id="question1">
+                        <div class="flexOption">
+                            <input type="radio" name="question1" value="redbone"></input>
+                            <label for="Nala">Nala</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question1" value="sober"></input>
+                            <label for="Simba">Simba</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question1" value="thisIsAmerica"></input>
+                            <label for="Mufasa">Mufasa</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question1" value="bonfire"></input>
+                            <label for="Scar">Scar</label>
+                        </div>
+                        <div class="flexOption">
+                            <input type="radio" name="question1" value="three005"></input>
+                            <label for="Rafiki">Rafiki</label>
+                        </div>
+                        <input type="submit" class="submitButton" id="submit1" value="Next">
+                    </form>
+                </div>
             </div>
         </section>
         <section class="quiz2">
@@ -91,7 +92,7 @@
                             <input type="radio" name="question2" value="three005"></input>
                             <label for="Pokebowl">Pokebowl</label>
                         </div>
-                        <input type="submit" class="submitButton" id="submit2" value="Submit">
+                        <input type="submit" class="submitButton" id="submit2" value="Next">
                     </form>
                 </div>
             </div>
@@ -129,7 +130,7 @@
                             <input type="radio" name="question3" value="sober"></input>
                             <label for="Mind Blown">Mind Blown 🤯</label>
                         </div>
-                        <input type="submit" class="submitButton submit3" value="Submit">
+                        <input type="submit" class="submitButton" id="submit3" value="Next">
                     </form>
                 </div>
             </div>
@@ -166,7 +167,7 @@
                             <input type="radio" name="question4" value="thisIsAmerica"></input>
                             <label for="Travelling around the world">Travelling around the world</label>
                         </div>
-                        <input type="submit" class="submitButton submit4" value="Submit">
+                        <input type="submit" class="submitButton" id="submit4" value="Next">
                     </form>
                 </div>
             </div>
@@ -204,7 +205,7 @@
                             <input type="radio" name="question5" value="three005"></input>
                             <label for="Need to turn up!">Need to turn up!</label>
                         </div>
-                        <input type="submit" class="submitButton submit5" value="Submit">
+                        <input type="submit" class="submitButton" id="submit5" value="See Results">
                     </form>
                 </div>
             </div>
@@ -244,9 +245,9 @@
                     </a>
                 </div>
             </div>
-            <!-- <div class="retakeQuiz">
-                <button>Restart Quiz</button>
-            </div> -->
+            <div class="retakeQuiz">
+                <button type="reset" class="submitButton" id="restart">Restart Quiz</button>
+            </div>
         </section>
     </main>
     <footer>
@@ -256,13 +257,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
-    <script src="js/script.js">
-        
-    </script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
-
-<!-- font-family: 'Monda', sans-serif;
-font-family: 'Passion One', cursive;-->

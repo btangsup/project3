@@ -179,6 +179,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+/* MIX INS */
+/* FLEXBOX CENTERING */
 /* GLOBAL STYLES */
 html {
   font-size: 120%;
@@ -228,6 +230,10 @@ section {
 
 main {
   padding: 40px 0 0;
+  background-image: url(../assets/header.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* HEADER STYLE */
@@ -296,6 +302,12 @@ main {
   animation: none;
 }
 
+.descriptionTitle {
+  line-height: 2rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
 .startQuizBtn {
   padding: 10px 40px;
   background-color: #A40606;
@@ -314,7 +326,7 @@ main {
 /*  QUESTION STYLES */
 .quiz {
   width: 60%;
-  height: 90vh;
+  height: 92vh;
   margin: 0 auto;
   border: 9px solid #A40606;
   border-radius: 20px;
@@ -333,6 +345,7 @@ main {
           align-items: center;
   text-align: center;
   background-color: #fff;
+  padding: 15px;
 }
 
 .quiz label {
@@ -363,7 +376,7 @@ form {
 }
 
 .submitButton {
-  display: inline-block;
+  display: block;
   border: 3px solid #A40606;
   background-color: #fff;
   width: 150px;
@@ -394,15 +407,22 @@ form {
   background-size: contain;
   color: #fff;
   padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .songTitleResult {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
   text-align: center;
 }
 
-/* FLICKITY STYLES */
+/* ALBUM STYLES */
 .checkAlbum {
   text-align: center;
   font-size: 2rem;
@@ -435,6 +455,10 @@ form {
           transform: translateY(-20px);
 }
 
+.retakeQuiz {
+  padding-top: 100px;
+}
+
 /* FOOTER STYLE */
 footer {
   text-align: center;
@@ -459,6 +483,9 @@ footer p {
     padding: 5px 10px;
     font-size: 2rem;
   }
+  .songTitleResult {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -467,5 +494,29 @@ footer p {
   }
   .mainTitle h1 {
     font-size: 4rem;
+  }
+  .songTitleResult {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 775px) {
+  .mainTitle h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .mainTitle h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .questionImg {
+    width: 250px;
+  }
+  .carousel-cell,
+  .checkAlbum {
+    display: none;
   }
 }

@@ -1,56 +1,6 @@
 @import "../partials/setup";
 @import "../partials/variables";
-
-/* GLOBAL STYLES */
-html {
-    font-size: 120%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body {
-    background: #fff;
-    font-family: 'Monda', sans-serif; 
-    font-size: 1rem;
-    line-height: 1.6rem;
-}
-
-ul,
-h1,
-h2,
-h3 {
-    font-family: 'Passion One', cursive;
-    padding: 0;
-}
-
-h2 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 2.0rem;
-    text-transform: capitalize;
-}
-
-img {
-    width: 100%;
-    object-fit: fill;
-}
-
-.wrapper {
-    width: 1280px;
-    margin: 0 auto;
-}
-
-
-section {
-    height: 100vh;
-}
-
-main {
-    padding: 40px 0 0;
-}
+@import "../partials/global";
 
 /* HEADER STYLE */
 
@@ -77,8 +27,7 @@ main {
             text-decoration: none;
             color: #fff;
             text-transform: uppercase;
-            font-size: .75rem;
-            
+            font-size: .75rem; 
         }
 }
 
@@ -104,6 +53,12 @@ main {
             animation: none;
         }
     }
+}
+
+.descriptionTitle {
+    line-height: 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
 // @keyframes neon {
@@ -133,7 +88,7 @@ main {
 
 .quiz {
     width: 60%;
-    height: 90vh;
+    height: 92vh;
     margin: 0 auto;
     border: 9px solid #A40606;
     border-radius: 20px;
@@ -143,20 +98,15 @@ main {
     align-items: center;
     text-align: center;
     background-color: #fff;
+    padding: 15px;
 
     label {
         font-size: 1.2rem;
     }
-
-    
 }
 
 .questionContainer {
     width: 100%;
-}
-
-.quiz1 {
-    // background-color: #1f1f1f;
 }
 
 form {
@@ -173,40 +123,22 @@ form {
     width: 150px;
 }
 
-
 .submitButton {
-    display: inline-block;
-    border: 3px solid #A40606;
+    display: block;
+    border: 3px solid $primary-color;
     background-color: #fff;
     width: 150px;
-    color: #A40606;
+    color: $primary-color;
     border-radius: 20px;
     text-transform: uppercase;
     transition: 0.3s ease;
     margin: 0 auto;
     
     &:hover {
-        background-color: #A40606;
+        background-color: $primary-color;
         color: #fff;
     }
 }
-
-
-
-
-
-
-// input[type=radio] +label::before {
-//     content: '';
-//     width: 1.2rem;
-//     height: 1.2rem;
-//     border: 5px solid #A40606;
-//     border-radius: 50%;
-//     display: inline-block;
-//     margin-right: 10px;
-//     margin-bottom: -5px;
-// }
-
 
 .questionImg {
     width: 400px;
@@ -222,16 +154,18 @@ form {
     background-size: contain;
     color: #fff;
     padding: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .songTitleResult {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     text-align: center;
 }
 
 
-/* FLICKITY STYLES */
+/* ALBUM STYLES */
 
 .checkAlbum {
     text-align: center;
@@ -256,6 +190,9 @@ form {
     } 
 }
 
+.retakeQuiz {
+    padding-top: 100px;
+}
 
 /* FOOTER STYLE */
 footer {
@@ -268,16 +205,6 @@ footer {
         padding: 0;
     }
 }
-
-
-
-// .quiz2,
-// .quiz3,
-// .quiz4,
-// .quiz5 {
-//     display: hidden;
-//     transition: all 1s;
-// }
 
 /* MEDIA QUERIES */
 
@@ -295,6 +222,10 @@ footer {
         padding: 5px 10px;
         font-size: 2rem;
     }
+
+    .songTitleResult {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 950px) {
@@ -304,6 +235,34 @@ footer {
 
     .mainTitle h1 {
         font-size: 4rem;
+    }
+
+    .songTitleResult {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 775px) {
+
+    .mainTitle h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .mainTitle h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .questionImg {
+        width: 250px;
+    }
+
+    .carousel-cell,
+    .checkAlbum {
+        display: none;
     }
 }
 
