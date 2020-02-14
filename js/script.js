@@ -278,12 +278,13 @@ $('document').ready(function(){
 
         console.log(sober, thisIsAmerica, redbone, bonfire, three005);
     })
+
+    // restart button to hard refresh the page and allow the user to take the quiz again
     $("#restart").on('click', function (event) {
         event.preventDefault();
         location.reload(true);
     });
 });
 
-   
 
 

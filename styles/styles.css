@@ -520,3 +520,12 @@ footer p {
     display: none;
   }
 }
+
+@media (max-height: 750px) {
+  .questionImg,
+  .carousel-cell,
+  .checkAlbum,
+  .questionImg3 {
+    display: none;
+  }
+}
