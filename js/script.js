@@ -1,7 +1,51 @@
 $('document').ready(function(){
 
     // create an open array to store results from user input
-    const results = []
+    const results = [
+        {
+            id: 'songOne',
+            score: 0,
+            songName: 'Redbone',
+            lyrics: "My Peanut Butter Chocolate cake with Kool-Aid. I'm trying not to waste my time. . .",
+            url: 'https://www.youtube.com/watch?v=Kp7eSUU9oy8',
+        },
+        {
+            id: 'songTwo',
+            score: 0,
+            songName: 'Sober',
+            lyrics: "And now that it's over, I'll never be sober. I couldn't believe, and now I'm so high.",
+            url: 'https://www.youtube.com/watch?v=jx96Twg-Aew',
+        },
+        {
+            id: 'songThree',
+            score: 0,
+            songName: 'This is America',
+            lyrics: "This is America, don't catch you slipping up, look Look what I'm whippin now, Police be trippin now.",
+            url: 'https://www.youtube.com/watch?v=VYOjWnS4cMY',
+        },
+        {
+            id: 'songFour',
+            score: 0,
+            songName: 'Algorhythm',
+            lyrics: "This is America, don't catch you slipping up, look Look what I'm whippin now, Police be trippin now.",
+            url: 'https://www.youtube.com/watch?v=VYOjWnS4cMY',
+        },
+        {
+            id: 'songFive',
+            score: 0,
+            songName: '3005',
+            lyrics: "This is America, don't catch you slipping up, look Look what I'm whippin now, Police be trippin now.",
+            url: 'https://www.youtube.com/watch?v=VYOjWnS4cMY',
+        },
+        {
+            id: 'songSix',
+            score: 0,
+            songName: 'Bonfire',
+            lyrics: "This is America, don't catch you slipping up, look Look what I'm whippin now, Police be trippin now.",
+            url: 'https://www.youtube.com/watch?v=VYOjWnS4cMY',
+        },
+
+    ]
     const allQuestions = [
 
     // the options represents a value that'll represent the result that is displayed at the end
